@@ -6,7 +6,7 @@ api_id = env.get('API_ID')
 api_hash = env.get('API_HASH')
 bot_token = env.get('BOT_TOKEN')
 
-app = Client(
+bot = Client(
     "my_bot",
     api_id=api_id,
     api_hash=api_hash,
