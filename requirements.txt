@@ -1,3 +1,5 @@
 httpx
 pyrogram
 tgcrypto
+uvicorn
+fastapi
