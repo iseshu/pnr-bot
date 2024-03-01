@@ -7,6 +7,8 @@ async def read_root():
     return {"message": "Hello, FastAPI!"}
 server = UvicornServer (
     Config (
-        app=app
+        app=app,
+        host="0.0.0.0",
+        port=8080
     )
 )
