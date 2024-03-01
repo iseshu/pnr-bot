@@ -1,5 +1,6 @@
 from pyrogram import Client
 from os import environ as env
+from server import server
 
 api_id = env.get('API_ID')
 api_hash = env.get('API_HASH')
@@ -14,4 +15,5 @@ app = Client(
 )
 
 if __name__ == "__main__":
-    app.run()
+    bot.loop.create_task(server.serve())
+    bot.run()
