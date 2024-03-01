@@ -7,7 +7,7 @@ bot_username = env.get("BOT_USERNAME")
 async def get_data(id):
     async with httpx.AsyncClient() as client:
         response = await client.get(url+id)
-    print(response)
+    print(response.text)
     print(url+id)
     return response.json()
 def convert_date(date:str, n:int):
