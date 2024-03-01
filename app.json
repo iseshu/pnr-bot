@@ -1,0 +1,16 @@
+{
+    "name": "PNR Status Checker Telegram Bot", 
+    "description": "A bot to check PNR status of Indian Railways", 
+    "repository": "https://github.com/iseshu/pnr-bot", 
+    "logo": "https://i.ibb.co/PF6Q73z/Gemini-Generated-Image.jpg", 
+    "buildpacks":  [
+        { "url": "heroku/python" } 
+    ],
+    "env": {
+      "API_ID": { "required": true, "description": "Your Telegram API ID for bot authorization" },
+      "API_HASH": { "required": true, "description": "Your Telegram API hash for bot authorization" },
+      "BOT_TOKEN": { "required": true, "description": "Your Telegram bot's unique token" },
+      "API_URL": { "required": true, "description": "Your Telegram API URL get it from t.me/iamyss" },
+      "BOT_USERNAME": { "required": true, "description": "Your Telegram bot's username without  the '@'" }
+    }
+  }
